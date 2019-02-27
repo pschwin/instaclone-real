@@ -1,6 +1,7 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 import { Form, Input } from 'reactstrap';
+import './Comment.css';
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -49,7 +50,9 @@ class CommentSection extends React.Component {
           onClick={this.increaseLikes} />
         <Icon.MessageCircle className='icon' />
       </div>
+      <div className="likes">
       <p>{this.state.likes} likes</p>
+      </div>
       {this.state.comments.map((comment, i) => {
         return (
           <div className='comment' key={i}>

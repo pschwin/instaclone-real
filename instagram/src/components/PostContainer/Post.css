@@ -1,0 +1,20 @@
+.postContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.opUserInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+
+.opUserInfo{
+    display: flex;
+    
+}
+
+.post{
+    width: 643px;
+}

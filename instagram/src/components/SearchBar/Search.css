@@ -1,10 +1,23 @@
-.logo img{
-    width: 200px;
+.searchBar{
+    display: flex;
+    justify-content: space-between;
 }
 
-#form input{
-    height: 30px;
-    width: 350px;
-    font-size: 20px;
+.instaCursive{
+    width: 200px;
+    height: 100%;
+  
+}
+
+.searchBarLeft svg{
+    width: 40px;
+    height: 40px;
+}
+
+.form-group input{
+
+    width: 300px;
+    
+
 }
 

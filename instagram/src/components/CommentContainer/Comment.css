@@ -1,0 +1,18 @@
+.commentSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.likeAndComment{
+    width: 100%;
+    text-align: left;
+}
+
+.likes{
+    width: 100%;
+    text-align: left;
+}
+
+.comment{
+    width: 100%;
+}

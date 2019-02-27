@@ -6,7 +6,7 @@ import * as Icon from 'react-feather';
 const SearchBar = props => {
   return (
     <div className='searchBar'>
-      <div className='seachBarLeft'>
+      <div className='searchBarLeft'>
         <Icon.Instagram className='instaIcon' />
         <img className='instaCursive'
           src='https://fontmeme.com/images/instagram-new-logo.png'
