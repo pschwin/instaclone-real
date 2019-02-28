@@ -2,6 +2,7 @@ import React from 'react';
 import * as Icon from 'react-feather';
 import { Form, Input } from 'reactstrap';
 import './Comment.css';
+import Comment from './Comment-Styled-Comp';
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -54,10 +55,10 @@ class CommentSection extends React.Component {
       </div>
       {this.state.comments.map((comment, i) => {
         return (
-          <div className='comment' key={i}>
+          <Comment className='comment' key={i}>
             <h3>{comment.username}</h3>
             <p>{comment.text}</p>
-          </div>
+          </Comment>
         )
       })}
       <Form onSubmit={this.addNewComment}>

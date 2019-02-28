@@ -15,4 +15,12 @@ const InstaCursive = styled.img`
     height: 100%;
     `;
 
-export {SearchBarDiv, InstaCursive};
+const FormInput = styled.input`
+    font-size: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    `;
+
+
+
+export {SearchBarDiv, InstaCursive, FormInput};

@@ -15,4 +15,14 @@
 
 .comment{
     width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.comment h3{
+    width: 20%
+}
+
+.comment p{
+    width: 80%;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Search.css';
-import { Form, FormGroup, Input } from 'reactstrap';
+import {} from 'reactstrap';
 import * as Icon from 'react-feather';
-import {SearchBarDiv, InstaCursive} from './Search-styled';
+import {SearchBarDiv, InstaCursive, FormInput} from './Search-styled';
 
 
 const SearchBar = props => {
@@ -16,16 +16,17 @@ const SearchBar = props => {
           alt='' 
         />
       </div>
-      <Form>
-        <FormGroup>
-        <Input 
+      <form>
+        
+        <FormInput 
           type='search'
           name='search'
           onChange={props.searchPosts}
-          placeholder='Search'/>
+          placeholder='Search'
+          />
           
-        </FormGroup>
-      </Form>
+        
+      </form>
       <div className='searchBarRight'>
         <Icon.Compass className='navIcons' />
         <Icon.Heart className='navIcons' />
