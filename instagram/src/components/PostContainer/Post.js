@@ -7,13 +7,13 @@ const Post = props => {
   return (
     <div className='post'>
       <div className='opUserInfo'>
-        <img src={props.post.thumbnailUrl} alt='Avatar' />
-        <h3>{props.post.username}</h3>
+        <img src={props.posted.thumbnailUrl} alt='Avatar' />
+        <h3>{props.posted.username}</h3>
       </div>
-      <img src={props.post.imageUrl} alt='Original Post'/>
+      <img src={props.posted.imageUrl} alt='Original Post'/>
       <CommentSection 
-        comments={props.post.comments}
-        likes={props.post.likes}
+        comments={props.posted.comments}
+        likes={props.posted.likes}
       />
     </div>
   )

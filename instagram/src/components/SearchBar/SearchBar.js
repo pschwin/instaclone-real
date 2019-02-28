@@ -2,15 +2,19 @@ import React from 'react';
 import './Search.css';
 import { Form, FormGroup, Input } from 'reactstrap';
 import * as Icon from 'react-feather';
+import {SearchBarDiv, InstaCursive} from './Search-styled';
+
 
 const SearchBar = props => {
   return (
-    <div className='searchBar'>
+    
+    <SearchBarDiv type="searchBarTypeTest">
       <div className='searchBarLeft'>
         <Icon.Instagram className='instaIcon' />
-        <img className='instaCursive'
+        <InstaCursive 
           src='https://fontmeme.com/images/instagram-new-logo.png'
-          alt='Instagram Cursive' />
+          alt='' 
+        />
       </div>
       <Form>
         <FormGroup>
@@ -18,7 +22,8 @@ const SearchBar = props => {
           type='search'
           name='search'
           onChange={props.searchPosts}
-          placeholder='🔍 Search'/>
+          placeholder='Search'/>
+          
         </FormGroup>
       </Form>
       <div className='searchBarRight'>
@@ -26,7 +31,7 @@ const SearchBar = props => {
         <Icon.Heart className='navIcons' />
         <Icon.User className='navIcons' />
       </div>
-    </div>
+    </SearchBarDiv>
   )
 }
 

@@ -11,7 +11,6 @@ class CommentSection extends React.Component {
       likes: props.likes,
       comment: ''
     }
-
   }
 
   addNewComment = event => {

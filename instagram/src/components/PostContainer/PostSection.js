@@ -9,7 +9,7 @@ const PostContainer = props => {
       {props.postData.map((post, i) => {
         return (
           <div className='postContainer' key={i}>
-            <Post post={post} />  
+            <Post posted={post} />  
           </div>
         )
       })}
